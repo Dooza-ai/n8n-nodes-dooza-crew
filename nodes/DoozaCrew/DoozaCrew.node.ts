@@ -84,9 +84,9 @@ export class DoozaCrew implements INodeType {
 				name: 'agent',
 				type: 'string',
 				required: true,
-				default: '',
-				placeholder: 'e.g. researcher',
-				description: 'Name or ID of the agent in your crew that should do the task',
+				default: 'master',
+				placeholder: 'e.g. master',
+				description: 'Agent that should do the task: master (your main agent) or any agent's name',
 				displayOptions: { show: { operation: ['runTask'] } },
 			},
 			{

@@ -21,7 +21,7 @@ The node can also be used as a tool by the n8n AI Agent node.
 ## Credentials
 
 1. Sign in at [crew.dooza.ai](https://crew.dooza.ai) (free to try, no card needed).
-2. Open the app settings and create an API key.
+2. In the Crew app, open **Settings → API key** and copy your key.
 3. In n8n, create a **Dooza Crew API** credential and paste the key. Leave **Base URL** as `https://crew.dooza.ai`.
 
 The key is sent as `Authorization: Bearer <key>`.
@@ -29,16 +29,16 @@ The key is sent as `Authorization: Bearer <key>`.
 ## Usage
 
 1. Add the **Dooza Crew** node after any trigger (form, email, webhook, schedule).
-2. Choose **Run Task**, enter the agent name and the task in plain words. Use expressions to pass data in, for example `Draft a reply to this lead: {{ $json.message }}`.
+2. Choose **Run Task**, enter the agent (`master` for your main agent, or any agent's name) and the task in plain words. Use expressions to pass data in, for example `Draft a reply to this lead: {{ $json.message }}`.
 3. The output has the task `id`, `status` and the agent's answer. Use it in the next node (send an email, update a sheet, post to Slack).
 
 ## Example workflow
 
-Schedule Trigger (every morning) → **Dooza Crew: Run Task** (agent: `researcher`, task: `Find 5 new reviews of our business and summarize them`) → Gmail: send the answer to yourself.
+Schedule Trigger (every morning) → **Dooza Crew: Run Task** (agent: `master`, task: `Find 5 new reviews of our business and summarize them`) → Gmail: send the answer to yourself.
 
 ## Compatibility
 
-Built with the n8n nodes API version 1. Tested on n8n 1.x and 2.x (self-hosted).
+Built with the n8n nodes API version 1 (n8n-nodes-starter). Agents usually answer in 5-60 seconds.
 
 ## Resources
 
