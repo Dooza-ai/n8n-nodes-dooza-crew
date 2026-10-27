@@ -86,7 +86,7 @@ export class DoozaCrew implements INodeType {
 				required: true,
 				default: 'master',
 				placeholder: 'e.g. master',
-				description: 'Agent that should do the task: master (your main agent) or any agent's name',
+				description: 'Agent that should do the task: master (your main agent) or the name of any agent in your crew',
 				displayOptions: { show: { operation: ['runTask'] } },
 			},
 			{
