@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-dooza-crew",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "n8n node for Dooza Crew: give tasks to your AI employees and get their results",
 	"license": "MIT",
 	"homepage": "https://dooza.ai",

@@ -21,10 +21,10 @@ The node can also be used as a tool by the n8n AI Agent node.
 ## Credentials
 
 1. Sign in at [crew.dooza.ai](https://crew.dooza.ai) (free to try, no card needed).
-2. In the Crew app, open **Settings → API key** and copy your key.
+2. In the Crew app, open the account menu (top right) → **API key** (direct link: `https://crew.dooza.ai/bridge/api-key`) and copy your key. It starts with `dz_`.
 3. In n8n, create a **Dooza Crew API** credential and paste the key. Leave **Base URL** as `https://crew.dooza.ai`.
 
-The key is sent as `Authorization: Bearer <key>`.
+The key is sent as `Authorization: Bearer <your key>` on every request.
 
 ## Usage
 
