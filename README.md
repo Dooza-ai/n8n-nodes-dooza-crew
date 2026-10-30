@@ -1,6 +1,6 @@
 # n8n-nodes-dooza-crew
 
-This is an n8n community node for [Dooza Crew](https://dooza.ai). It lets you give tasks to the AI employees in your crew from any n8n workflow and use their answers in the next steps.
+This is an n8n community node for [Dooza Crew](https://www.dooza.ai/integrations/n8n). It lets you give tasks to the AI employees in your crew from any n8n workflow and use their answers in the next steps.
 
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/sustainable-use-license/) workflow automation platform.
 
@@ -20,7 +20,7 @@ The node can also be used as a tool by the n8n AI Agent node.
 
 ## Credentials
 
-1. Sign in at [crew.dooza.ai](https://crew.dooza.ai) (sign-ups open in waves; join the waitlist and we email you when a seat opens).
+1. Sign in at [crew.dooza.ai](https://crew.dooza.ai) (free to try, no card needed; seats are built in order, and if yours is queued you will have it within 90 minutes).
 2. In the Crew app, open the account menu (top right) → **API key** (direct link: `https://crew.dooza.ai/bridge/api-key`) and copy your key. It starts with `dz_`.
 3. In n8n, create a **Dooza Crew API** credential and paste the key. Leave **Base URL** as `https://crew.dooza.ai`.
 
@@ -43,5 +43,7 @@ Built with the n8n nodes API version 1 (n8n-nodes-starter). Agents usually answe
 ## Resources
 
 - [n8n community nodes documentation](https://docs.n8n.io/integrations/#community-nodes)
-- [Dooza Crew](https://dooza.ai)
+- [Dooza Crew for n8n: setup guide](https://www.dooza.ai/integrations/n8n)
+- [All Dooza Crew integrations and the Task API](https://www.dooza.ai/integrations)
+- [Crew Task API (OpenAPI)](https://crew.dooza.ai/v1/openapi.json)
 - Support: support@dooza.ai
